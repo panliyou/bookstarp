@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device_width, initial-scale=1" />
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+	<style type="text/css">
+		.table{
+			margin: 10px auto 20px 300px;
+		}
+		body{
+			background-image: url(images/背景1.jpg);
+		}
+		target{
+			color: yellow;
+		}
+		p{
+			color: #00008B;
+		}
+	</style>
+	<body>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<h1 class="text-center">WELCOME TO MY HOMETOWN</h1>
+		
+		<div class="col-lg-6 col-md-6">
+			<h2 class="dao" style="color: yellow;">导航</h2>
+		<nav id="myScrollspy" class="navbar navbar-default navbar-static" role="navigation">
+   <div class="navbar-header">
+	   <!--导航栏-->
+      <button class="navbar-toggle" type="button" data-toggle="collapse" 
+         data-target=".bs-js-navbar-scrollspy">
+         <span class="sr-only">切换导航</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">目录</a>
+   </div>
+   <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+      <ul class="nav navbar-nav">
+         <li class="active"><a href="#ios">家乡概况</a></li>
+         <li><a href="#svn">家乡风俗</a></li>
+         <li>
+            <a href="#jmeter">地理环境 </a>
+           
+         </li>
+      </ul>
+   </div>
+</nav>
+<!--滚动监听-->
+<div data-spy="scroll" data-target="#myScrollspy" data-offset="0" 
+   style="height:200px;overflow:auto; position: relative;">
+   <div class="section">
+      <h4 id="ios">Information<small><a href="#" onclick="removeSection(this);">
+         &times; 删除该部分</a></small>
+      </h4>
+<p> 广东省，以岭南东道、广南东路得名，简称“粤”，省会广州，是中国大陆南端沿海的一个省份</p>
+<p>位于南岭以南，南海之滨，与香港、澳门、广西、湖南、江西和福建接壤，与海南隔海相望，划分为珠三角、粤东、粤西和粤北四个区域</p>
+<p>下辖21个地级市（其中副省级城市2个），119个县级行政区（60个市辖区、20个县级市、36个县、3个自治县）。</p>
+<p>广东省在秦以前，作为中华民族先民的南越族人民已从事农业活动，是中国历史上商品性农业最早发展的地区之一，也是中国最早出现资本主义生产方式的省份之一。</p>
+   </div>
+   <div class="section">
+      <h4 id="svn">家乡风俗<small></small></h4>
+      <p>广东省在语言风俗、传统、历史文化等方面都有着独特风格，是岭南文化的重要传承地。</p>
+      <p>通行粤语、客家语和闽语，而且粤、客两大方言的中心都在广东。</p>
+      <p>广东省也是中国人口最多，社会、文化最开放的省份，居粤的外国人士达百万</p>
+      <p>饮食习俗是广东文化很有特色的一个分支，粤菜享誉海内外，“食在广州”也早已闻名于世。 </p>
+   </div>
+   <div class="section">
+      <h4 id="jmeter">地理环境<small><a href="#" onclick="removeSection(this);">
+         &times; 删除该部分</a></small>
+      </h4>
+      <p>广东陆地的地势大体是北高南低，地形复杂，有山地、丘陵、台地、平原，以山地和丘陵为主,两者合占全省土地面积的62%</p>
+      <p>广东境内的山地主要分布于粤北、粤东和粤西，多呈东北——西南走向。</p>
+      <p>有大庾岭、骑田岭、滑石山、瑶山、大东山、连山，海拔高度一般为800—1100米，最高为乳源的石坑崆，海拔1902米，为广东的最高峰等。</p>
+      <p>广东位于北纬20°09'~ 25°31'，东经109°45'~117°20'，是中国大陆最南的省份。北枕南岭，南临南海，是一个开放的相对独立的地理单元。</p>
+   </div>
+  
+</div>
+		</div>
+		<div class="col-lg-6 col-md-6">
+			<div class="col-lg-4 col-md-6 col-md-3">
+	<!--条纹进度条-->
+  <h2>景区分量</h2>
+  <p>长隆</p>
+  <div class="progress progress-striped">
+   <div class="progress-bar progress-bar-info" style="width: 90%;">
+    
+   </div>
+   </div>
+   <p>鸡笼顶</p>
+   <div class="progress progress-striped">
+   <div class="progress-bar progress-bar-success" style="width: 50%;">
+     
+   </div>
+   </div>
+   <p>七星岩</p>
+   <div class="progress progress-striped">
+   <div class="progress-bar progress-bar-danger" style="width:80%;">
+   </div>
+</div>
+<p>凌霄岩</p>
+   <div class="progress progress-striped">
+   <div class="progress-bar progress-bar-danger" style="width:85%;">
+   </div>
+</div>
+</div>
+
+		</div>
+		<!--一些景点的详情-->
+<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/凌霄岩.jpg" alt="123" />
+							<div class="caption">
+							<h3>凌霄岩</h3>
+							<p>凌霄岩位于广东省阳春市城西北66公里的罗阳峰林之中，面积36.7平方公里，是以喀斯特岩溶地貌为特征，自然山水溶洞为主的风景名胜区，是广东省颁布的第一批风景名胜区之一。</p>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/石林.jpg" alt="123" />
+							<div class="caption">
+							<h3>春湾</h3>
+							<p>春湾石林，又名"莲花洞石林"，位于阳春市春湾镇春湾风景区内，占地200多亩，山上有马头峰、骆驼峰、莲蓬峰、蛤蚧石、观音拜月石、仙人过坳石、百页剑门等怪石。</p>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/溪流.jpg" alt="123" />
+							<div class="caption">
+							<h3>溪流</h3>
+							<p>乡间溪流，宁静的环境，清新的空气，正所谓小桥流水人家，让人有一种心旷神怡的感觉，青草绿绿，流水湛湛。</p>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/佛山石湾公园.jpg" alt="123" />
+							<div class="caption">
+							<h3>佛山石湾公园</h3>
+							<p>石湾公园坐落在佛山石湾南风古灶景区里，与南风古灶，陶师祖庙，石湾公仔步行街形成一个有机的整体。石湾公园绕湖而建，小巧玲珑。最有特色的是公园内的用洗手盘和坐厕依壁而建的瀑布群。</p>
+							</div>
+					</div>
+				</div>
+		</div>
+
+					<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/钟乳石.jpg" alt="123" />
+							<div class="caption">
+							<h3>钟乳石</h3>
+							<p>从百页剑门进入石林中，石峰奇突，景象万千。有似"童子拜观音"、"猛狮过岭"、仰天嗥叫的野狼像等石头。</p>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/石洞.jpg" alt="123" />
+							<div class="caption">
+							<h3>石洞</h3>
+							<p>石灰岩溶洞，四周为六座山峰所包围，恰好似六瓣莲花。在龙宫岩附近的莲花洞，地面岩石峥嵘，有如无数利剑直刺青天，故又称百页剑门。</p>
+							</div>
+					</div>
+				</div>
+		<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/东湖水库.jpg" alt="123" />
+							<div class="caption">
+							<h3>东湖水库</h3>
+							<p>阳春市东湖水库工程管理处地址设在中国第一侨乡、中国曲艺之乡江门，广东 江门 春城镇东湖东路</p>
+							</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+						<div class="thumbnail">
+							<img src="images/阳西.jpg" alt="123" />
+							<div class="caption">
+							<h3>阳西风光</h3>
+							<p>阳西县境属背山面海的丘陵地带，平原面积17%，地势从西北向东南倾斜，西北和东南高，中部低。阳西县最高点蛾凰嶂海拔1337米，位于县境西北部，与电白区、阳春市交界。</p>
+							</div>
+					</div>
+				</div>
+				
+		
+<div>
+ <div class="table">
+      <table class=tab7 width="730" border="0" cellpadding="5" cellspacing="0">
+        <tr>
+          <td height="25" colspan="2" bgcolor="#F7F7F7">
+          	<span class="STYLE39"></span> <h4>广东民风民俗大全</h4>：</td>
+      </tr>
+        <tr>
+          <td height="200" colspan="2" valign="top">
+          	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          		<tr>
+          			<td width="33%">·<a href="../Html/200779152616-1.html" target=_blank>佛山生育禁忌 </a></td>
+          			<td width="33%">·<a href="../Html/20077914162-1.html" target=_blank>广州节日--荷花节 </a></td>
+          			<td width="33%">·<a href="../Html/20077915106-1.html" target=_blank>惠州春节舞龙、舞狮 </a></td>
+          		</tr>
+          		<tr>
+          			<td width="33%">·<a href="../Html/200779152558-1.html" target=_blank>佛山禁忌俗 </a></td>
+          			<td width="33%">·<a href="../Html/200779152540-1.html" target=_blank>早茶</a></td>
+          			<td width="33%">·<a href="../Html/200779152215-1.html" target=_blank>龙川杂技 </a></td>
+          		</tr>
+          			<tr>
+          				<td width="33%">·<a href="../Html/20077915270-1.html" target=_blank>深圳节日欢海中 </a></td>
+          				<td width="33%">·<a href="../Html/200779141546-1.html" target=_blank>阳江山歌节 </a></td>
+          				<td width="33%">·<a href="../Html/200779145243-1.html" target=_blank>揭阳风俗民情 </a></td>
+          			</tr>
+          				<tr>
+          					<td width="33%">·<a href="../Html/200779144940-1.html" target=_blank>广州过年习俗 </a></td>
+          					<td width="33%">·<a href="../Html/200779152522-1.html" target=_blank>饮糖水</a></td>
+          					<td width="33%">·<a href="../Html/20077915456-1.html" target=_blank>广州传统文化 </a></td>
+          				</tr>
+          					<tr>
+          						<td width="33%">·<a href="../Html/20077914494-1.html" target=_blank>广东梅州风俗文化 </a></td>
+          						<td width="33%">·<a href="../Html/20077915436-1.html" target=_blank>广州建筑特色 </a></td>
+          						<td width="33%">·<a href="../Html/200779152637-1.html" target=_blank>栽种四方竹的习俗 </a></td>
+          					</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/20077913248-1.html" target=_blank>东莞人的鸭蛋民俗 </a></td>
+          							<td width="33%">·<a href="../Html/20077913216-1.html" target=_blank>河源客家过年的风俗</a></td>
+          							<td width="33%">·<a href="../Html/200779132128-1.html" target=_blank>客家山歌 </a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/200779152315-1.html" target=_blank>云浮历史人文 </a></td>
+          							<td width="33%">·<a href="../Html/200779141119-1.html" target=_blank>汕头风土人情 </a></td>
+          							<td width="33%">·<a href="../Html/20077915932-1.html" target=_blank>惠州民间中秋赏月</a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/20077915836-1.html" target=_blank>佛山风俗民情</a></td>
+          							<td width="33%">·<a href="../Html/200779141529-1.html" target=_blank>阳江龙舟节 </a></td>
+          							<td width="33%">·<a href="../Html/20077915912-1.html" target=_blank>惠州重阳节登高、放风筝 </a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/20077915254-1.html" target=_blank>饮凉茶 </a></td>
+          							<td width="33%">·<a href="../Html/200779144958-1.html" target=_blank>珠海渔家过寿 </a></td>
+          							<td width="33%">·<a href="../Html/20077915741-1.html" target=_blank>五邑农村的传统婚仪</a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/200779141413-1.html" target=_blank>江门五邑五月龙船抢大标 </a></td>
+          							<td width="33%">·<a href="../Html/200779145410-1.html" target=_blank>广州的迎春花市 </a></td>
+          							<td width="33%">·<a href="../Html/20077914558-1.html" target=_blank>东莞民俗风情 </a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/200779152429-1.html" target=_blank>广州民俗节日 </a></td>
+          							<td width="33%">·<a href="../Html/200779132050-1.html" target=_blank>河源客家的历史 </a></td>
+          							<td width="33%">·<a href="../Html/200779145137-1.html" target=_blank>舞狮 </a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/200779132429-1.html" target=_blank>韶关的民族风情 </a></td>
+          							<td width="33%">·<a href="../Html/200779145036-1.html" target=_blank>造屋与进宅 </a></td>
+          							<td width="33%">·<a href="../Html/200779145430-1.html" target=_blank>客家方言 </a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/20077915657-1.html" target=_blank>瑶排古寨景如画 </a></td>
+          							<td width="33%">·<a href="../Html/20077915244-1.html" target=_blank>清远风俗民情 </a></td>
+          							<td width="33%">·<a href="../Html/200779152335-1.html" target=_blank>阳江风俗民情</a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/200779145156-1.html" target=_blank>独特的壮家节日 </a></td>
+          							<td width="33%">·<a href="../Html/200779141627-1.html" target=_blank>广州节日--荔枝节 </a></td>
+          							<td width="33%">·<a href="../Html/200779141330-1.html" target=_blank>伦文叙与状元及第粥</a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/20077914133-1.html" target=_blank>土家客家风情 哭啼办喜事 </a></td>
+          							<td width="33%">·<a href="../Html/200779132312-1.html" target=_blank>怀集落花灯节 </a></td>
+          							<td width="33%">·<a href="../Html/20077915539-1.html" target=_blank>独特的壮家建筑 </a></td>
+          						</tr>
+          						<tr>
+          							<td width="33%">·<a href="../Html/200779141143-1.html" target=_blank>珠海的丧葬礼俗 </a></td>
+          							<td width="33%">·<a href="../Html/20077915948-1.html" target=_blank>惠州民间端午节龙舟竞渡 </a></td>
+          							<td width="33%">·<a href="../Html/200779145350-1.html" target=_blank>恩平灯节 </a></td></tr>
+          							<tr><td width="33%">·<a href="../Html/20077914535-1.html" target=_blank>汕尾风俗民情 </a></td>
+          								<td width="33%">·<a href="../Html/200779152139-1.html" target=_blank>舞九鳄 </a></td>
+          								<td width="33%">·<a href="../Html/20077915717-1.html" target=_blank>壮瑶风情醉游人 </a></td>
+          							</tr>
+          								<tr>
+          									<td width="33%">·<a href="../Html/20077915520-1.html" target=_blank>风趣的壮家婚俗 </a></td>
+          									<td width="33%">·<a href="../Html/200779141242-1.html" target=_blank>珠海节庆日如何庆祝 </a></td>
+          									<td width="33%">·<a href="../Html/200779145450-1.html" target=_blank>潮汕中秋风俗 </a></td>
+          								</tr>
+          									<tr>
+          										<td width="33%">·<a href="../Html/200779141431-1.html" target=_blank>鹤山市活鲤拜门 </a></td>
+          										<td width="33%">·<a href="../Html/20077914158-1.html" target=_blank>徐闻婚礼俗 </a></td>
+          										<td width="33%">·<a href="../Html/200779152446-1.html" target=_blank>龙岗舞龙之乡艺术节 </a></td>
+          									</tr>
+          										<tr><td width="33%">·<a href="../Html/20077915759-1.html" target=_blank>潮莲纱龙 </a></td>
+          											<td width="33%">·<a href="../Html/200779141649-1.html" target=_blank>韶关开唱节 </a></td>
+          											<td width="33%">·<a href="../Html/200779132214-1.html" target=_blank>深圳荔枝节  </a></td>
+          										</tr>
+          											<tr><td width="33%">·<a href="../Html/200779132145-1.html" target=_blank>佛山－－粤剧之源 </a></td>
+          												<td width="33%">·<a href="../Html/20077915415-1.html" target=_blank>广州旅游活动庆典 </a></td>
+          												<td width="33%">·<a href="../Html/200779145331-1.html" target=_blank>佛山民间灰批 </a></td>
+          											</tr>
+          												<tr>
+          													<td width="33%">·<a href="../Html/200779152252-1.html" target=_blank>中山民风民俗 </a></td>
+          													<td width="33%">·<a href="../Html/20077915638-1.html" target=_blank>瑶家大节——耍歌堂 </a></td>
+          													<td width="33%">·<a href="../Html/200779132240-1.html" target=_blank>横沥镇红荔风情节 </a></td>
+          												</tr>
+          													<tr><td width="33%">·<a href="../Html/20077915622-1.html" target=_blank>盘王古迹 </a></td>
+          														<td width="33%">·<a href="../Html/20077914124-1.html" target=_blank>珠海的婚嫁礼俗 </a></td>
+          														<td width="33%">·<a href="../Html/20077915819-1.html" target=_blank>放生鲤 </a></td>
+          													</tr>
+          														<tr><td width="33%">·<a href="../Html/200779141223-1.html" target=_blank>珠海的生老礼俗 </a></td>
+          															<td width="33%">·<a href="../Html/200779151037-1.html" target=_blank>潮州风韵介绍  </a></td>
+          															<td width="33%">·<a href="../Html/200779152122-1.html" target=_blank>饭钵山文化 </a></td>
+          														</tr>
+          															<tr><td width="33%">·<a href="../Html/200779132030-1.html" target=_blank>必背瑶族的风俗民情 </a></td>
+          																<td width="33%">·<a href="../Html/200779145221-1.html" target=_blank>现代大亚湾的渔家婚俗 </a></td>
+          																<td width="33%">·<a href="../Html/200779152157-1.html" target=_blank>紫金花朝戏 </a></td>
+          															</tr>
+          																<tr><td width="33%">·<a href="../Html/200779152235-1.html" target=_blank>中山节庆 </a></td>
+          																	<td width="33%">·<a href="../Html/20077914510-1.html" target=_blank>广东的地域文化</a></td>
+          																	<td width="33%">·<a href="../Html/20077914179-1.html" target=_blank>韶关长鼓舞 </a></td>
+          																</tr>
+          																	<tr><td width="33%">·<a href="../Html/200779141353-1.html" target=_blank>屈大均与广州民间传说 </a></td>
+          																		<td width="33%">·<a href="../Html/2007791561-1.html" target=_blank>瑶家婚俗 </a></td>
+          																		<td width="33%">·<a href="../Html/20077915855-1.html" target=_blank>蓝田瑶族</a></td>
+          																	</tr>
+          																		<tr><td width="33%">·<a href="../Html/200779141449-1.html" target=_blank>中元节 </a></td>
+          																			<td width="33%">·<a href="../Html/200779145120-1.html" target=_blank>广州传统艺术 </a></td>
+          																			<td width="33%">·<a href="../Html/200779132333-1.html" target=_blank>东莞的槟榔风俗 </a></td>
+          																		</tr>
+          																			
+      
+</div>
+<ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+	</body>
+</html>
